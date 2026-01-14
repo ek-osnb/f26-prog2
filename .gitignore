@@ -1,0 +1,11 @@
+.DS_Store
+template/
+old/
+notes/
+solutions
+project/
+**/*.pdf
+.vscode/
+
+**/*-notes.md
+*-notes.md
