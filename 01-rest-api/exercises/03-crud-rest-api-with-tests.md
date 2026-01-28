@@ -16,8 +16,7 @@ In this exercise you will create a simple REST API for managing a to-do list usi
 - `PATCH /api/todos/{id}/completed` - Mark a to-do item as completed
     - If the to-do item with the specified ID does not exist, return a `404 Not Found` response, by throwing a NotFoundException (should be done in the service layer).
 
-To do this exercise, fork and clone the GitHub repository:
-<!-- TODO: Add repo link -->
+To do this exercise, fork and clone the GitHub repository: https://github.com/ek-osnb/spring-api-starter
 
 Open the project in IntelliJ and complete the tasks below.
 
