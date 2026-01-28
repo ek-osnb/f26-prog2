@@ -4,7 +4,7 @@ old/
 notes/
 solutions
 project/
-**/*.pdf
+# **/*.pdf
 .vscode/
 
 **/*-notes.md
