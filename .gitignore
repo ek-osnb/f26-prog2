@@ -9,3 +9,9 @@ project/
 
 **/*-notes.md
 *-notes.md
+
+*.typ
+
+02-jpa-intro/**
+
+01-rest-api/slides/**
