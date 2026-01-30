@@ -52,45 +52,6 @@ public class Order {
     }
     
     // Getters and setters
-    public Long getId() {
-        return id;
-    }
-    
-    public void setId(Long id) {
-        this.id = id;
-    }
-    
-    public String getOrderNumber() {
-        return orderNumber;
-    }
-    
-    public void setOrderNumber(String orderNumber) {
-        this.orderNumber = orderNumber;
-    }
-    
-    public LocalDate getOrderDate() {
-        return orderDate;
-    }
-    
-    public void setOrderDate(LocalDate orderDate) {
-        this.orderDate = orderDate;
-    }
-    
-    public Double getTotalAmount() {
-        return totalAmount;
-    }
-    
-    public void setTotalAmount(Double totalAmount) {
-        this.totalAmount = totalAmount;
-    }
-    
-    public Customer getCustomer() {
-        return customer;
-    }
-    
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
 }
 ```
 
@@ -280,10 +241,10 @@ public ResponseEntity<Order> createOrder(@RequestBody Order order) {
 
 **Test with Postman:**
 
-```json
-POST http://localhost:8080/api/orders
-Content-Type: application/json
+`POST http://localhost:8080/api/orders`
 
+Body (JSON):
+```json
 {
   "orderNumber": "ORD-006",
   "orderDate": "2025-01-20",
