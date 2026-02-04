@@ -85,8 +85,6 @@ Add methods to convert between entities and DTOs:
 ```java
 private MovieResponse toMovieResponse(Movie movie) {
     // TODO: Map Movie entity to MovieResponse DTO
-    // Handle null checks for rating, details, and actors
-    // Use stream().map() to convert actors list
 }
 
 private Movie toMovieEntity(CreateMovieRequest request) {
