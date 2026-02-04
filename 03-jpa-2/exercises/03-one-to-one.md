@@ -78,7 +78,7 @@ public ResponseEntity<Movie> addDetailsToMovie(
 ```
 
 ## Step 4: Use `@JsonManagedReference` and `@JsonBackReference`
-To prevent infinite recursion during JSON serialization, modify the `Movie` and `Actor` entities, adding `@JsonManagedReference` and `@JsonBackReference` annotations.
+To prevent infinite recursion during JSON serialization, modify the `Movie` and `MovieDetails` entities, adding `@JsonManagedReference` and `@JsonBackReference` annotations.
 
 
 ## Testing Your Implementation
