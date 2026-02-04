@@ -9,7 +9,7 @@ Fork the starter project from [this GitHub repository](https://github.com/ek-osn
 Clone your forked repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/spring-movie-api-jpa-starter.git
+git clone git@github.com:your-username/spring-movie-api-jpa-starter.git
 ```
 > [!NOTE]
 > Replace `your-username` with your **actual GitHub username**.
