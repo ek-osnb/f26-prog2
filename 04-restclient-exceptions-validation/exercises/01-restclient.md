@@ -32,7 +32,7 @@ The combined response should be in the following format:
 ```
 
 ### Tasks
-- Set up a new Spring Boot project with WebFlux dependency.
+- Set up a new Spring Boot project with Web dependency.
 - Create a RestClient bean to be used for making HTTP requests.
 - Implement a service that uses RestClient to call the three APIs and fetch data based on the provided name.
 - Combine the results from the three APIs into a single response object.
