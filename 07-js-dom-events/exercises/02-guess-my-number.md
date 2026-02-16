@@ -27,7 +27,7 @@ Create a game where the computer picks a random number between two values (e.g.,
 		</form>
 		<p id="feedback"></p>
 		<p id="attempts"></p>
-		<button id="restartBtn" style="display:none;">Restart Game</button>
+		<button id="restartBtn" class="hidden">Restart Game</button>
 	</main>
 	<script src="app.js"></script>
 </body>
