@@ -7,7 +7,7 @@ In this exercise, you will practice DOM manipulation and handling events by buil
 Create the following files in your project:
 - `index.html`: The HTML structure of the app.
 - `style.css`: The CSS styles for the app.
-- `script.js`: The JavaScript code to handle DOM manipulation and events.
+- `app.js`: The JavaScript code to handle DOM manipulation and events.
 
 ### HTML (index.html)
 ```html
