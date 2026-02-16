@@ -208,6 +208,5 @@ function handleGuess(event) {
 ## Bonus Challenge
 1. Add a feature to track and display the user's previous guesses, should be displayed in a list below the game, and reset when the game is restarted.
 2. Add a feature to store the best score (least attempts) in the browser's local storage and display it on the page
-
-	> [!TIP]
-	> Local storage allows you to save data in the user's browser, so it persists even after the page is refreshed. You can use `localStorage.setItem(key, value)` to save data and `localStorage.getItem(key)` to retrieve it. For example, you could save the best score with `localStorage.setItem("bestScore", attempts)` and retrieve it with `const bestScore = localStorage.getItem("bestScore")`.
+> [!TIP]
+> Local storage allows you to save data in the user's browser, so it persists even after the page is refreshed. You can use `localStorage.setItem(key, value)` to save data and `localStorage.getItem(key)` to retrieve it. For example, you could save the best score with `localStorage.setItem("bestScore", attempts)` and retrieve it with `const bestScore = localStorage.getItem("bestScore")`.
