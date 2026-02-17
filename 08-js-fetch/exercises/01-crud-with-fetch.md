@@ -71,7 +71,7 @@ function initApp() {}
 1. Create an async function called `fetchTodos` that fetches the list of todos from the JSONPlaceholder API:
     ```js
     async function fetchTodos() {
-        const response = await fetch(BASE_URL_TODOS);
+        const response = await fetch(`${BASE_URL_TODOS}`);
         const todos = await response.json();
         return todos;
     }
@@ -124,7 +124,7 @@ async function initApp() {
 1. Create an async function called `addTodo` that takes a todo object as an argument and sends a POST request to the JSONPlaceholder API to create a new todo:
 ```js
 async function addTodo(todo) {
-    const response = await fetch(BASE_URL_TODOS, {
+    const response = await fetch(`${BASE_URL_TODOS}`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
