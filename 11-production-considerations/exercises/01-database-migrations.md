@@ -51,6 +51,8 @@ You will build an `Order` / `OrderItem` domain from scratch, creating each migra
 
 ## 2. Project Setup
 
+> Clone or fork this [repository](https://github.com/ek-osnb/spring-flyway-starter)
+
 ### Dependencies
 
 The project already has everything it needs in `pom.xml`:
