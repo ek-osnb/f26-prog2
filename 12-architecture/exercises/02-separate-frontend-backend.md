@@ -17,11 +17,12 @@ my-project/
 │  ├─ styles.css
 │  └─ app.js
 │  └─ ...
-└─ backend/
+├─ backend/
 │  ├─ pom.xml
 │  ├─ Dockerfile
 │  └─ src/
-└─ compose.yml
+├─ compose.yml
+└─ .env
 ```
 > Notice that the `.git` folder is in the root of the project, so both the frontend and backend are part of the same git repository. This way you can still manage both applications together, but they are separated in terms of code structure.
 
@@ -29,7 +30,7 @@ my-project/
 2. Move the the whole project folder into the newly created folder, and rename it to `backend`.
 3. Create a new folder called `frontend` in the root of the project.
 4. Move the frontend files  from `backend/src/main/resources/static` to the `frontend` folder.
-5. Move `.git`, `README.md`, `compose.yml`, `.github` and any other files that are not part of the backend code to the root of the project (if they are not already there).
+5. Move `.git`, `README.md`, `compose.yml`, `.github` and any other files that are not part of the backend code to the root of the project (if they are not already there). Your sample `.env` file should also be moved to the root folder.
 6. After moving the files, run your backend application and make sure everything is working as expected. You might need to update the paths to the frontend files in your backend code (e.g., in your controllers or configuration).
 
 ### Exercise 2: Nginx reverse proxy and Docker
