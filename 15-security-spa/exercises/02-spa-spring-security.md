@@ -159,6 +159,7 @@ Integrate the Spring Security configuration with a simple SPA frontend. The fron
     ```bash
     docker compose up -d
     ```
+    > If this gives an error about `host.docker.internal` not being found, you can replace it with `172.17.0.1`, which is the default gateway for Docker containers on Linux. On Windows and Mac, `host.docker.internal` should work out of the box.
 
 5. The frontend should now be running at `http://localhost`, and the backend should be running at `http://localhost/api/**`.
 
