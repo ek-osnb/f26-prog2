@@ -118,21 +118,29 @@ Integrate the Spring Security configuration with a simple SPA frontend. The fron
     ```
 2. Configure the `nginx.conf` file to serve the frontend and proxy API requests to the Spring Boot backend:
     ```nginx
+    upstream backend {
+        server host.docker.internal:8080;
+        keepalive 32;
+    }
+
     server {
         listen 80;
+        root /usr/share/nginx/html;
+        index index.html;
 
-        location / {
-            root /usr/share/nginx/html;
-            index index.html;
-            try_files $uri $uri/ /index.html; # For SPA routing
-        }
-
-        location /api/ {
-            proxy_pass http://backend:8080; # Proxy API requests to the backend service
+        location ~ ^/(api|logout) {
+            proxy_pass http://backend;
+            proxy_http_version 1.1;
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
             proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Connection "";
+            proxy_buffering off;
+        }
+
+        location / {
+            try_files $uri /index.html;
         }
     }
     ```
