@@ -6,7 +6,7 @@ You will in the end have a frontend that communicates with a backend using sessi
 
 ## Setup
 
-1. Fork this [repository]() to your GitHub account.
+1. Fork this [repository](https://github.com/ek-osnb/spring-security-jwt-starter) to your GitHub account.
 2. Clone the repository to your local machine.
 3. Open the project in IntelliJ IDEA.
 4. Start the applications using Docker Compose:
