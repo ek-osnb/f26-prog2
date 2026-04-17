@@ -119,14 +119,12 @@ Inside the `UserController` class use constructor injection to inject the `Token
 
 You need to replace this line:
 ```java
-return new UserResponse(username, roles);
+String username = authentication.getName();
 ```
 
 with this:
 ```java
 String subject = tokenSubjectExtractor.extract(authentication);
-
-return new UserResponse(subject, roles);
 ```
 
 This way, the `UserController` will return the correct username for both username/password logins and GitHub logins.
