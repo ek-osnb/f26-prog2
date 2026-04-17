@@ -190,7 +190,7 @@ Add the following dependencies to your `pom.xml` file in the `resource-server` m
 This will add the necessary dependencies for securing the resource server with JWT tokens issued by the BFF.
 
 ### Step 2: Configuring the resource server
-In the `ResourceServerConfig` class, add the following configuration to set up the resource server to validate JWT tokens:
+In the `resource` module, create a new package `security` and add a new class `SecurityConfig`, with the following code to configure the resource server to validate JWT tokens:
 ```java
 @Configuration
 public class SecurityConfig {
